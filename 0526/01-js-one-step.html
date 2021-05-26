@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>js 첫걸음</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid red;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .container {
+        width: 500px;
+        border: 1px solid #000;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .dark-mode {
+        background: gold;
+        color: #999;
+    }
+</style>
+</head>
+<body>
+    <button onclick="document.body.classList.toggle('dark-mode')">change mode</button>
+    <div class="container">
+        <h1>Javascript darkmode test</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi doloremque enim debitis dicta modi? Adipisci dolore, corporis suscipit natus possimus neque iste iusto, culpa iure laborum, recusandae omnis libero quis!</p>
+    </div>
+
+</body>
+</html>
