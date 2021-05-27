@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>parameter prac</title>
+</head>
+<body>
+
+    <script>
+        // 인사함수
+        function sayHello(name) {
+            console.log(name);
+            console.log("안녕하세요 " + name  + "입니다")
+        }
+        sayHello("강현욱")
+        
+        // 숫자를 변수로 받기
+        // 제곱함수
+        function getTwice(param) {
+            console.log(param * param);
+        }
+        var param = 300;
+        var param = prompt('값을 입력해주세요');
+        // console.log(param);
+        // getTwice(100);
+
+        // 커피값계산
+        function cafeCalcul(cups) {
+            var americanoPrice = 4500;
+            console.log(americanoPrice * cups);
+        }
+        cafeCalcul(5);
+
+        // 환전하는 함수 usd to won
+        /* 
+        * desc : 달러를 원화로 환전하는 함수
+        * param: usd
+        * return: won
+        */
+        function exchangeUsdToWon(usd) {
+            var wonPrice = 1150;
+            var result = wonPrice * usd;
+            console.log(result + "원 입니다")
+        }
+        exchangeUsdToWon(1500)
+
+        // kb to mb
+        function kbToMega(kb) {
+            // 실행문
+            // 1MB = 1024KB
+            // 1 / 1024 MB = 1KB
+            // 45773 / 1024 MB    = 45773KB
+            console.log(kb/1024);
+        }   
+        kbToMega(45773)
+
+        function teraToGiga(teraData) {
+            // 1TB = 1024GB
+            // 3TB = 3 * 1024GB
+            // console.log(teraData * 1024);
+            var result = teraData * 1024;
+            console.log(teraData + "TB는");
+            console.log(result + "GB 입니다");
+        }
+        teraToGiga(3);
+
+        function teraToMega(teraData) {
+            // 1GB = 1024MB /* 1024GB = 1024 * 1024MB */
+            // 1TB = 1024GB;
+            // 1TB = 1024 * 1024MB;
+            // 7 * 1TB = 7 * 1024 * 1024MB;
+            var result = teraData * 1024 * 1024;
+            console.log(teraData + "TB는");
+            console.log(result + "MB 입니다")
+        }
+        teraToMega(25);
+
+        function megaToGiga(megaData) {
+            // 1MB = 1024KB
+            // 5MB = 5 * 1024KB
+            var result = megaData / 1024
+            console.log(megaData)
+        }
+        megaToGiga(1);
+    </script>
+
+</body>
+</html>

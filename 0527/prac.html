@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>function</title>
+</head>
+<body>
+
+
+    <script>
+        function greeting(){
+            console.log(`미국 : "하이"`);
+            console.log(`중국 : "리하오마"`);
+            console.log(`일본 : "오하요고자이마스"`);
+            console.log(`프랑스 : "봉쥬르"`);
+            console.log(`한국 : "안녕하세요"`);
+        }
+        greeting();
+        greeting();
+        greeting();     
+        // 함수를 호출하는것만으로도 (ex.모든인사말) 반복사용가능
+
+
+        // singer = parameter(매개변수) - 전달
+        function sing($singer){
+            console.log(">>>>>>");
+            console.log("가수:" + $singer);
+            console.log("동해 물과 백두산이 마르고 닳도록");
+            console.log(">>>>>>");
+            console.log("무궁화 삼천리 화려 강산");
+            console.log("대한 사람, 대한으로 길이 보전하세.");
+        }
+        sing("BTS");
+        // sing("잔나비");
+        // sing("악동뮤지션");
+
+        // money = 매개변수
+        function myBankAccount(money) {
+            var deposit = 0;
+            var deposit = deposit + money;
+            console.log("나의 잔고는" + deposit)
+        }
+        myBankAccount(1000000);
+
+
+        fuction kbToMega(kb) {
+            var mb = 1024;
+            console.log(kb * mb);
+        }
+        kbToMega(45773);
+    </script>
+</body>
+</html>

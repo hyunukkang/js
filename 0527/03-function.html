@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>function</title>
+</head>
+<body>
+
+
+    <script>
+        
+        // 함수실행이 윗줄에 있어도 가능 
+        // why? - function hoisting - 어디든 함수선언만 된다면 실행가능 - 어디든 가져다가 쓸수 있게 함!
+        javascriptClass();
+        
+        // 함수선언(declare) /* 버그 = 영어표시 = 영어알아두기 */
+        function javascriptClass() {
+            console.log('오늘 늦잠 잠');
+            // 함수의 재사용성
+            // 반복을 줄여줌
+            // 일관성 유지
+            // 버그 발생률이 떨어짐
+            // 추상화 개념
+            javascriptStudy();
+            javascriptStudy();
+            javascriptStudy();
+            javascriptStudy();
+            javascriptFocus();
+
+            prompt("내일은?");
+        }
+        // 함수실행(fire, excute)
+        javascriptClass(); /* ()는 호출 - 함수 호출 할때는 () */
+
+        function javascriptStudy() {
+            console.log('집중하세요~')
+        }
+        function javascriptFocus() {
+            console.log("몰입하세요")
+        }
+        
+
+        function sing() {
+            console.log("애국가 4절");
+            console.log("");
+            console.log("1절");
+            console.log("동해 물과 백두산이 마르고 닳도록");
+            console.log("하느님이 보우하사 우리나라 만세.");
+            console.log("무궁화 삼천리 화려 강산");
+            console.log("대한 사람, 대한으로 길이 보전하세.");
+        }
+        sing();
+        sing();
+        sing();
+        sing();
+        sing();
+        sing();
+        // 해석 (반복사용) - 여러번 반복하는거와 같음
+        console.log("애국가 4절");
+        console.log("");
+        console.log("1절");
+        console.log("동해 물과 백두산이 마르고 닳도록");
+        console.log("하느님이 보우하사 우리나라 만세.");
+        console.log("무궁화 삼천리 화려 강산");
+        console.log("대한 사람, 대한으로 길이 보전하세.");
+        console.log("애국가 4절");
+        console.log("");
+        console.log("1절");
+        console.log("동해 물과 백두산이 마르고 닳도록");
+        console.log("하느님이 보우하사 우리나라 만세.");
+        console.log("무궁화 삼천리 화려 강산");
+        console.log("대한 사람, 대한으로 길이 보전하세.");
+        console.log("애국가 4절");
+        console.log("");
+        console.log("1절");
+        console.log("동해 물과 백두산이 마르고 닳도록");
+        console.log("하느님이 보우하사 우리나라 만세.");
+        console.log("무궁화 삼천리 화려 강산");
+        console.log("대한 사람, 대한으로 길이 보전하세.");
+        console.log("애국가 4절");
+        console.log("");
+        console.log("1절");
+        console.log("동해 물과 백두산이 마르고 닳도록");
+        console.log("하느님이 보우하사 우리나라 만세.");
+        console.log("무궁화 삼천리 화려 강산");
+        console.log("대한 사람, 대한으로 길이 보전하세.");
+    </script>
+</body>
+</html>

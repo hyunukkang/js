@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>01 review</title>
+<!-- 선언의 위치,특징 중요!! -->
+<!-- head 내부 - css 다음 순서로 배치 -->
+<link rel="stylesheet" href="css">
+<script>
+    // css > viewport = vp
+    // js > window
+    window.onload = function() {
+        console.log(">>> head >>>");
+    }
+</script>
+</head>
+<body>
+    <!-- body 첫번째 선언 될수도 있음 = 일반적으로 body 내부 끝 -->
+    <script>
+        consol.log(">>> body start >>>")
+    </script>
+    <link rel="stylesheet" href="./js">
+    
+
+    <button onmouseover="alert('mouse over');">
+        mouse over
+    </button>
+    
+
+    <!-- bosy 내부 끝에 배치 - 위치는 바뀔수 있다 -->
+    <script>
+        console.log('>>>>> body end >>>>>')
+    </script>
+    <link rel="stylesheet" href="./js">
+
+    <!-- 모든건 데이터이다 -->
+    <script>
+        console.log(123);
+        // 정수(integer), 소수(floating)
+        console.log("123");
+        console.log(1 >= 2); /* true or false */
+        console.log(null); /* 의도적인 없음 표현 */
+        console.log(undefined); /* 시스템에서 없음의 결과 표현시 사용 */
+        console.log(10 % 3); /* 나머지 연상 */
+        console.log(" test\"test ");
+        console.log(` test"test `); /* 백틱방식 추천 */
+        console.log("20" + "21"); /* 2021(o) / 41(X) */
+        console.log(Number("20") + Number("21"));
+
+        // = (같다) - 수학적 해석
+        // = (대입힌다) - 프로그래밍적 해석
+        a = (1 + 123) / (123 * 123); /* 괄호-먼제 계산 같은 연산 가능 */
+        // 동등비교
+        123 == 123
+        // not ? (부등비교)
+        123 != 123
+        123123123 == 999999999999457557
+        'seoul' == 'Seoul'
+
+        var myMoney = 9999999945645;
+        var deposit = (myMoney - 1000);
+        
+        var myMoney; /* undefined */
+        var myMoney = null; /* null, ex.통장을 만든다*/
+        var myMoney = 0; /* 0, ex.0원의 통장 - 통장생성되있음*/
+        
+        // 문자열(string)
+        // str이면 문자열 이라는 약속 - 문자열임을 알아볼수있음
+        var str; 
+        var $str = "123";
+        var _str = "abc";
+    </script>
+</body>
+</html>

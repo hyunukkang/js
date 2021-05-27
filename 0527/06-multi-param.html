@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>multi param</title>
+</head>
+<body>
+
+
+    <script>
+        // 함수선언 (num1, num2)
+        function printNumber(num1, num2, num3){
+            /* 적힌차례가 순서다! .. 적힌숫자가 순서가 아니다! */
+            console.log(num3)
+            console.log(num1 + num2);
+        };
+        printNumber(1, 2, 3); /* (num1 + num2) */
+        
+        function introduce(name, age, goal){
+            console.log("안녕하세요~");
+            console.log("제 이름은 " + name + "입니다");
+            console.log("나이는 " + age + "살 입니다");
+            console.log("제 목표는 " + goal + "입니다");
+        }
+        introduce("알파카", 123, "웹퍼블리셔 취업");
+
+
+        function martCalculator(potatoNum, peachNum, appleNum)/* 바뀌는값 이름정의*/ {
+            // 정의 값
+            var potatoPrice = 2000
+            var peachPrice = 3700
+            var applePrice = 5000
+            var totalPrice = (potatoPrice * potatoNum) + (peachPrice * peachNum) + (applePrice * appleNum);
+            console.log("감자" + potatoNum + "개, 복숭아" + peachNum + "개, 사과" + appleNum + "를 구입하니다");
+            console.log("알파카가 과일 값으로 지불할 총 금액은" + totalPrice + "원 입니다")
+            // console.log("가격은" + totalPrice + "입니다") 
+            console.log() 
+        }
+        martCalculator(3, 5, 10) /* 바뀌는 값 */
+
+        
+    </script>
+</body>
+</html>
