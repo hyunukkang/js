@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>function</title>
+</head>
+<body>
+
+    <script>
+        console.log(null == undefined); /* true - 비슷하기도함 - 동등비교 */
+        console.log(null === undefined); /* false - 정확히 같지는 않음 - 일치비교*/
+        console.log(null != undefined); /* false - 다르지만 비슷하기도함 - 부등비교 */
+        console.log(null !== undefined); /* true - 불일치함 - 불일치 비교 */
+
+        function greeting(nation) {
+            var greeting = "hi";
+            console.log(nation + " : " + greeting);
+        };
+        greeting("미국");
+
+        function coffeePrice(shot) {
+            var coffee = 4500
+            console.log(shot * coffee)
+        }
+        coffeePrice(7);
+
+        function exchangeCalculator(usd){
+            var wonPrice = 1150;
+            var result = wonPrice * usd;
+            console.log(result + "원 입니다");
+        };
+        exchangeCalculator(1500);
+
+        function kbToMega(kb){
+            // kb = 1 * 1024
+            var result = kb / 1024;
+            console.log(kb +"KB는 " + result + "MB 입니다")
+        };
+        kbToMega(45773);
+
+        function teraToGiga(tera) {
+            var result = tera * 1024;
+            console.log (tera + "TB는 " + result + "GB 입니다")
+        };
+        teraToGiga(3)
+
+        function teraToMega(tera){
+            result = tera * (1024 * 1024);
+            console.log(tera + "TB는 " + result + "MB 입니다");
+        };
+        teraToMega(7);
+
+        function martCalculator(potato, peach, apple){
+            var potatoPrice = potato * 2000;
+            var peachPrice = peach * 3700;
+            var applePrice = apple * 5000;
+            var result = potatoPrice + peachPrice + applePrice;
+            console.log("감자 " + potato + "개 복숭아" + peach + "개 사과 " + apple + "개 를 구입합니다");
+            console.log("알파카가 과일 값으로 지불 할 총 금액은 " + result + "원 입니다.")
+        };
+        martCalculator(3, 5, 10)
+
+        function coffeCalculator(shot, shotPrice) {
+            var result = shot * shotPrice
+            console.log("커피" + shot + "잔 주문하시면");
+            console.log("지불할 총 금액은 " + result + "원 입니다")
+        };
+        coffeCalculator(7, 4500)
+
+        function exchangeCalculator(usd, won, date){
+            var result = usd * won
+            console.log(date + "오늘 환율은" + won + "원 입니다");
+            console.log("원화로" + result + "입니다");
+        };
+        exchangeCalculator(150, 1117, "2021.05.27");
+    </script>
+
+</body>
+</html>
