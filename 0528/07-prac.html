@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>prac</title>
+</head>
+<body>
+    
+
+    <script>
+        function cafeCalculator(people, coffeePrice){
+            var totalPrice = people * coffeePrice ;
+            return totalPrice;
+        };
+        var result = cafeCalculator(7, 4500);
+        console.log(`지불할 총 금액은 ${result} 입니다`);
+
+        // console.log(`>>>>>>>>>>>>>>>>>>>`)
+        
+        function exchangeRateCalc(dollar, won){
+            var Price = dollar * won;
+            return Price;
+        };
+        var result = exchangeRateCalc(150, 1117)
+        console.log(`원화로 ${result}원 입니다`);
+        
+        // console.log(`>>>>>>>>>>>>>>>>>>>`)
+        
+        function interestCalculator(myMoney, saveTerm, interestRate){
+            var  result = myMoney * saveTerm * interestRate / 100;
+            return result;
+        };
+        var myMoney = 3650000;
+        var saveTerm = 1;
+        var interestRate = 4;
+        var myInterest = interestCalculator(myMoney, saveTerm, interestRate);
+        var totalMoney = myMoney + myInterest;
+        console.log('맡긴금액은' + myMoney + '원 입니다\n이자는 ' + myInterest + '원 입니다\n최종 받을 금액은 ' + totalMoney + `원 입니다`);   
+        
+        // console.log(`>>>>>>>>>>>>>>>>>>>`)
+
+        function vendingMachine(coke, sprite, fanta){
+            cokePrice = coke * 1500;
+            spritePrice = sprite * 1200;
+            fantaPrice = fanta * 900;
+            var result = cokePrice + spritePrice + fantaPrice;
+            return result;
+        };
+        var totalPrice = vendingMachine(2, 3, 5);
+        console.log(`총 지불할 금액은 ${totalPrice}원 입니다`);
+
+        function bmiCalc(name, weight, tall){
+            var result = weight / (tall * tall / 10000);
+            return result;
+            // console.log(name + `님의 체질량 지수는 ` + bmi + `입니다`)
+        };
+        // bmiCalc("홀쭉이", 43.52, 160);
+        // bmiCalc("코린이", 61.25, 175);
+        var name = "홀쭉이";
+        var weight = 43.52;
+        var tall = 160;
+        var bmi = bmiCalc(name, weight, tall);
+        console.log(name + `님의 체질량 지수는 ` + bmi + ` 입니다`);
+    </script>
+</body>
+</html>
