@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>function-prac</title>
+</head>
+<body>
+
+
+
+    <script>
+        // 커피 계산기
+        // function cafeCalculator(ameCount, price)
+        function coffeeCaculator(shot, coffeePrice){
+            var totalPrice = shot * coffeePrice
+            console.log("커피 " + shot + "잔 주문하시면");
+            console.log("지불할 총 금액은" + totalPrice + "원 입니다");
+            console.log(`커피` + shot + `잔 주문하시면\n지불할 총 금액은 ` + totalPrice + ` 입니다`)
+        };
+        coffeeCaculator(1, 4500)
+
+        // 환율 계산기
+        function exchangeRateCaculator(usd, won, date){
+            var result = usd * won;
+            console.log(date + " 오늘 환율은 " + won + "원 입니다");
+            console.log("원화로 " + result + "원 입니다");
+            // console.log(date + "오늘 환율은" + wonRate + "원 입니다\n원화로" + wonPrice + "원 입니다")
+
+        };
+        exchangeRateCaculator(150, 1117, "2021.05.27");
+        
+        // function bmiCalc(name, wight, height)
+        function bmiCaculator(name, weight, tall){
+            // var bmiIndex = weight / (height * height / 10000);
+            var result = weight / (tall * tall / 10000);
+            console.log(name + "의 체질량 지수는 " + result + "입니다");
+        };
+        bmiCaculator("홀쭉이", 43.52, 160);
+        bmiCaculator("코린이", 61.25, 175);
+        bmiCaculator("홀쭉이", 77.76, 180);
+        bmiCaculator("000", 62, 180);
+    </script>
+</body>
+</html>

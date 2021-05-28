@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>review</title>
+</head>
+<body>
+
+    <h1>커피자동 계산 프로그램</h1>
+    <script>
+        function cafeCalculator(ameCups, latteCups, juiceCups){
+            // 디버깅할때 활용
+            // console.log(">>>>>>>>>>>>");
+            // console.log(ameCups);
+            // console.log(latteCups);
+            // console.log(juiceCups);
+            // console.log(">>>>>>>>>>>>");
+
+            // 아메리카노, 라떼, 주스
+            var americanoPrice = 4500;
+            var lattePrice = 6100;
+            var juicePrice = 10200;
+
+            var ameTotalPrice = americanoPrice * ameCups; 
+            var latteTotalPrice = lattePrice * latteCups;
+            var juiceTotalPrice = juicePrice * juiceCups;
+
+            // console.log(">>>>>>>>>>>>");
+            // console.log(ameTotalPrice);
+            // console.log(latteTotalPrice);
+            // console.log(juiceTotalPrice);
+            // console.log(">>>>>>>>>>>>");
+            
+            var totalPrice = ameTotalPrice + latteTotalPrice + juiceTotalPrice;
+            var addComma = totalPrice.toLocaleString('ko-KR');
+
+            // console.log("최종 지불할 금액은 : " + totalPrice);
+            console.log("최종 지불할 금액은 : " + addComma);
+
+        // function cafeCalculator(cups){
+            var price = 4500;
+            console.log(cups); /* 버그 찾아보기 - ex) 개발자도구 - undefined - 정의되지 않음 */
+            console.log(">>>>>>> cups :" + cups); /* 버그 찾아보기 - ex) 개발자도구 - undefined - 정의되지 않음 */
+            // var totalPrice = cups * price;
+            // Nan : Not a Number;
+            // console.log : 브라우저 콘솔창에 log를 찎어줌
+            consloe.log(titalPrice);
+        }
+        // function hoisting
+        // 함수 호이스팅 > 끌어올린다
+        cafeCalculator(52345, 444566, 10123455);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title></title>
+</head>
+<body>
+    
+    <script>
+
+        // 여기에 interestCalculator 함수 코드를 입력해 주세요.
+        // 이자 계산하는 함수
+        function interestCalculator (myMoney, saveTerm, interestRate){
+            // 맡긴 금액(원) * 맡기는 기간(년) * 이자율(%) / 100
+            var result = myMoney * saveTerm * interestRate / 100;
+            return result;
+            // return은 함수의 결과값을 밖으로 보냄 - 함수가 return으로 정의되어 밖으로 보냄
+            // ex) return = interestCalculator();
+        }
+        
+        // 조건 입력 테스트
+        var myMoney = 3650000; // 맡긴 금액 (원)
+        var saveTerm = 1; // 맡기는 기간 (년)
+        var interestRate = 4; // 이자율 (%)
+        
+        // 수령액 계산 테스트
+        var myInterest = /* 여기에 적절한 코드 작성 */
+        var totalMoney = /* 여기에 적절한 코드 작성 */
+        
+        var myInterest = interestCalculator(myMoney, saveTerm, interestRate);
+        var totalMoney = myMoney + myInterest;
+        
+        // 정의 잘 내리기
+
+        // 출력 테스트
+        console.log('맡긴 금액은 ' + myMoney + '원 입니다.');
+        console.log('이자는 ' + myInterest + '원 입니다.');
+        console.log('최종 받을 금액은 ' + totalMoney + '원 입니다.');
+        
+        
+    </script>
+</body>
+</html>

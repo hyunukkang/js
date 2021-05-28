@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>return prac</title>
+</head>
+<body>
+
+
+    <script>
+        function test(num){
+            // console.log(num);
+            return num;
+        };
+        // test(999)
+        var result = test(999);
+        console.log(result);
+
+
+        function slotMachin(cokeNum, spriteNum, hwantaNum){
+            var cokePri = 1500;
+            var spritePri = 1200;
+            var hwantaPri = 900;
+
+            var result = (cokeNum * cokePri) + (spriteNum * spritePri) + (hwantaNum * hwantaPri);
+
+            return result;
+        };
+
+        var totalPrice = slotMachin(2 ,3, 5); 
+        console.log(`지불할 금액은 ${totalPrice}`);
+
+        function interestCaculator(amount, term, rate){
+            var ratePrice = amount * term * (rate / 100)
+            return ratePrice
+        };
+        var result = interestCaculator(3650000, 1, 4);
+        console.log(result);
+        console.log()
+    </script>
+</body>
+</html>

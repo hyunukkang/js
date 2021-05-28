@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>return</title>
+</head>
+<body>
+
+
+    <script>
+        var year = 2021,
+            month = 12,
+            day = 20;
+        console.log('생년월일은 ' + year + '년 ' + 
+                    month + '월 ' + day + '일 입니다');
+        // templet 문자열
+        // `${}` 를 활용해 간단히 할 수 있지만 '',"" + var 에도 알고 익숙해져있어야함
+        // console.log(`생년월일은 ${year}년 ${month}월 ${day}일 입니다`)
+
+        function slotMachin(){
+            // 반환한다
+            return 100;
+        };
+        // console.log(slotMachin());
+        // slotMachin();
+
+        function slotMachin(number){
+            var square = number * number;
+            console.log(square)
+            // 반환한다
+            // return number * 2;
+            return square;
+        };
+        // console.log(slotMachin(100));
+
+        function printValue(x){
+            console.log(x);
+        };
+
+        function getValue(x){
+            return x;
+        };
+
+        printValue(printValue());
+        // printValue(5);
+        // getValue(7);
+        console.log(getValue(7));
+
+        var result = getValue(7);
+        console.log(result);
+
+
+        function getTwice(num){
+            return num * 2;
+        }
+        // getTwice(5);
+        var firstNum = getTwice(50);
+        console.log(firstNum);
+        var secondNum = getTwice(100);
+        console.log(secondNum);
+        console.log(firstNum + secondNum);
+
+        function addCalc(num){
+            console.log('==== 리턴 전');
+            var result = num * num
+            return num; /* 리턴을 만나면 함수가 종료됨 - 리턴뒤로는 dead code */
+            console.log('==== 리턴 후');
+            // return num;
+            return result
+        };
+        console.log('>>>함수 호출 전')
+        // addCalc(777);
+        console.log(addCalc(777));
+        console.log('>>>함수 호출 후')
+
+        function multiple(num){
+            return num * num;
+        };
+        console.log('>>>함수 호출 전');
+        console.log(multiple(3) * multiple(3));
+        console.log('>>>함수 호출 후');
+    </script>
+</body>
+</html>
