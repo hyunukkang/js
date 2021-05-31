@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>review</title>
+</head>
+<body>
+
+    <script>
+        /* 버그확인 */
+        // console.log('>>>>> 0');
+
+        // 변수 (variable)
+        var number = 4500;
+        var americanoPrice = 4500;
+        var _lattePrice = 5100;
+        var $brewPrice = 6000;
+        // 앞에 숫자는 불가
+
+        // console.log('>>>>> 1');
+
+        // 함수 (function) 선언문
+        function cafeCalculator(){}
+        // 매개변수
+        function cafeCalculator(x, y, z){
+        // console.log('>>>>> 함수 내부');
+        // 리턴
+        return x + y + z;
+        // console.log(">>>> dead code >>>>>" /* return 뒤 코드*/)
+        }
+        // 함수호출문
+        // console.log('>>>>> 함수 호출문');
+        // cafeCalculator(americanoPrice, _lattePrice, $brewPrice); /* return은 값을 반환할뿐 console.log 처럼 보이진 않는다 */
+        console.log(cafeCalculator(americanoPrice, _lattePrice, $brewPrice));
+        // console.log('>>>>> 함수 호출문 2');
+        var result = cafeCalculator(americanoPrice, _lattePrice, $brewPrice);
+        console.log("result : " + result);
+        document.write(result);
+    </script>
+
+</body>
+</html>

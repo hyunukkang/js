@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>if statement(if문)</title>
+</head>
+<body>
+
+
+    <script>
+
+        /* 
+            if(조건부분){
+                실행부분;
+            }
+         */
+        // var myMoney = 4500;
+
+        // // 
+        // function checkPay(money) {
+        //     if( money >= 4100 ){
+        // /* >,< 꺽새가 항상 앞에 쓰임 = 이 뒤  */ 
+        //         arert("결제 가능하십니다")
+        //     }else{
+        //         alert("잔액부족입니다")
+        //     }    
+        // }
+        // checkPay(3000);
+
+        // if( myMoney >= 4100 ){
+        // /* >,< 꺽새가 항상 앞에 쓰임 = 이 뒤  */ 
+        //     arert("결제 가능하십니다")
+        // }else{
+        //     alert("잔액부족입니다")
+        // }
+
+        var myTestPoint = 59;
+        // 조건문
+        if(myTestPoint > 60){
+            console.log("시험에 통과 하셨습니다")
+        }else if(myTestPoint >= 50 /* && myTestPoint < 60  - 결과는 동일 하지만 위에 조건이 있으므로 써줄필요없음  */){
+            console.log("재시험 대상자입니다")
+        }else/* 그 밖에 */{
+            console.log("시험에 탈락하셨습니다")
+        }
+    </script>
+</body>
+</html>

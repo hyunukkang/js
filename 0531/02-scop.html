@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>scope</title>
+<style>
+    h1 {
+        color: red;
+        border: 1px solid #000;
+    }
+</style>
+</head>
+<body>
+
+    <h1>title</h1>
+
+    <script>
+        var x = 4; /* 전역변수(globa variable) - 함수 외부+내부(내부에 값이없다면)에도 영향을 줌 */
+            x = 5; /* 동일한 이름은 var 생략가능, 4생략, 5생성 */
+        const x = 4; /* 변하지 않음 - 고정*/
+        var x = 5; /* 4고정, 5생성안됨 */
+        console.log(x);
+
+        // function checkScope(){
+        //     var x = 3; /* 지역변수 (local variable) - 함수 내부에서만 영향을 줌 */
+        //     console.log("함수 내부 >>>" + x);
+        // }
+        // checkScope();
+        // console.log("함수 외부 >>>" + x);
+
+        var str /* string */ = "문자 자료형" 
+        var number = 1000;
+        console.log(str);
+        console.log(typeof str);
+        console.log(typeof number);
+        console.log(typeof 1 - 5);
+        var str = "문자 자료형";
+        console.log(typeof str + "안녕");
+        console.log(typeof str + str);
+        console.log(typeof (str + str));
+
+        console.log(20);
+        // 형변환
+        console.log(typeof String(20));
+        console.log(typeof Number("문자"));
+
+        var str = true;
+        var sflseStr = false;
+        console.log(str);
+        console.log(Number(str));
+        // true = 1;
+        console.log(Number(falseStr));
+        // false = 0;
+
+
+        // 복합할당연산자
+        var x = 1;
+            x += 1; /* x = x + 1; */
+            x -= 1; /* x = x - 1; */
+            x *= 1; /* x = x * 1; */
+            x /= 1; /* x = x / 1; */
+            x %= 1; /* x = x 나머지 */
+            console.log(x);
+
+        // or(||) 논리연산자
+        // 둘중에 하나만 ture이면 참을 반환
+        console.log( 10 > 1 ||/* or(또는) */ 1 > 3);
+
+        // and(&&) 논리연산자
+        // 둘다 참이여야 true를 반환
+        console.log( 10 > 1 &&/* and */ 1 > 3);
+        
+        //  논리 부정 연산자
+        console.log( !true );
+        console.log( !false );
+    </script>
+</body>
+</html>

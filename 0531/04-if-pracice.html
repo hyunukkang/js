@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>if practice</title>
+</head>
+<body>
+
+    <script>
+        var aPerson = 144;
+        var bPerson = 135;
+        var cPerson = 170;
+
+        checkHeight(aPerson);
+        checkHeight(bPerson);
+        checkHeight(cPerson);
+
+        function checkHeight(height){
+            if(height >= 140){
+                console.log("탑승이 가능합니다")
+            }else{
+                console.log("탑승이 불가능합니다")
+            }
+        }
+
+        // function printGrade(midtermScore, finalScore){
+        //     if(midtermScore + finalScore >= 90){
+        //         console.log("A");
+        //     }else if(midtermScore + finalScore >= 80){
+        //         console.log("B")
+        //     }else if(midtermScore + finalScore >= 70){
+        //         console.log("C")
+        //     }else if(midtermScore + finalScore >= 60){
+        //         console.log("D")
+        //     }else if(midtermScore + finalScore < 60){
+        //         console.log("F")
+        //     }
+        // }
+        // printGrade(25, 35);
+        // printGrade(50, 45);
+        // printGrade(29, 24);
+        // printGrade(37, 42);
+        
+        // 학점자동계산기
+        function printGrade(midtermScore, finaltermScore){
+            // 값이 잘 나오나 확인
+            console.log("중간고사 >>" + finaltermScore);
+            console.log("중간고사 >>" + finaltermScore);
+            var score = midtermScore + finaltermScore;
+            // midtermScore + finalScore 처럼 반복(중복) 되는건 var = 변수 정의 내려서 간소화!! - 정석 
+            console.log("합계점수: " + score)
+            if(score >= 90){
+                console.log("A");
+            }else if(score >= 80 /* && score < 90 - 위 조건과 같으므로 생략가능 */){
+                console.log("B")
+            }else if(score >= 70){
+                console.log("C")
+            }else if(score >= 60){
+                console.log("D")
+            }else{
+                console.log("F")
+            }
+        }
+        printGrade(25, 35);
+        printGrade(50, 45);
+        printGrade(29, 24);
+        printGrade(37, 42);
+
+        function ageCheck(age){
+            if(age > 19){
+                console.log("성인입니다")
+            }else if(age > 14){
+                console.log("청소년입니다")
+            }else if(age > 6){
+                console.log("어린이입니다")
+            }else{
+                console.log("유아입니다")
+            }
+        }
+        ageCheck(15);
+        ageCheck(20);
+        ageCheck(7);
+        ageCheck(6);
+
+
+        function printAge(age){
+            console.log(age + "세는");
+            if(age > 19){
+                console.log("성인입니다")
+            }else if(age > 14){
+                console.log("청소년입니다")
+            }else if(age > 6){
+                console.log("어린이입니다")
+            }else{
+                console.log("유아입니다")
+            }
+        }
+        printAge(15);
+        printAge(20);
+        printAge(7);
+        printAge(6);
+
+
+    </script>
+
+</body>
+</html>
