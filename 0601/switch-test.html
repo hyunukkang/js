@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>switch-test</title>
+</head>
+<body>
+
+
+    <script>
+        function checkPrice(ticket){
+            switch(ticket){
+                case "R":
+                    console.log(`R석은 13만원 입니다`);
+                    break;
+                case "VIP":
+                    console.log(`VIP석은 15만원 입니다`);
+                    break;
+                case "S":
+                    console.log(`S석은 10만원 입니다`);
+                    break;
+                case "VIP":
+                    console.log(`A석은 8만원 입니다`);
+                    break;
+                default:
+                console.log(`VIP,R,S,A 중 하나를 선택해주세요`);
+                    break;
+            }
+        }
+        checkPrice("B");
+    </script>
+
+</body>
+</html>

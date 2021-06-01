@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>
+    01 review
+</title>
+</head>
+<body>
+
+    <script>
+
+        // 인사하는 함수
+        // const myName = "알파카";
+        // // 자동으로 js에서 var를 선언해준다
+        // // 상수이면서 global var(전역변수)
+        // // var friName = "캥거루";
+        // function greeting(name, func){
+        //     if(typeof fucn == "function") {
+        //         console.log(`안녕하세요~ ${name}입니다`)
+        //     }else {
+        //         console.log("부재중 입니다")
+        //     }
+        //     var friName = "캥거루"; /* local variable */
+        //     console.log(`안녕하세요~ ${name}입니다`)
+        // };/* function 뒤 ; 는 생략가능 */
+        // myName = "캥거루";
+        // // friName = "캥거루"
+        // greeting(myName, func);
+        // greeting(firName);
+
+        // var func = function (){
+        //     // 변수에는 함수도 할당 가능
+        //     console.log("이건 함수야");
+        // }
+        // console.log(typeof myName);
+        // console.log(typeof func);
+
+        // function prompt(){
+        //     return value;
+        // }    
+        function question(){
+            var answer = prompt("오늘 점심 메뉴로 무엇을 드시겠어요 1) 짜장면 2)짬뽕 3)기타 ");
+                convertAnswer = Number(answer);
+            console.log(answer);
+            console.log(typeof answer);
+            // 1 = "1" 문자형태의 1 일이다 string = 문자
+            1 Number
+
+            // if(Number(answer) === 1) {
+            if(convertAnswer === 1) {
+                console.log('짜장면을 먹을게요')
+            }else if(answer === 2){
+                console.log('짬뽕을 먹을게요')
+            }else{
+                console.log('고민좀 해볼게요')
+            }
+        }
+        question();
+    </script>
+
+</body>
+</html>

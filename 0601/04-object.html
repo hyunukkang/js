@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>object</title>
+</head>
+<body>
+
+    <script>
+        var myYouChannel = {
+            //key : value
+            channelName: "alpack coding",
+            // 띄어쓰기 있으면 "" 표시
+            "opne year": 2021,
+            isHot: true,
+            info: {
+                category: "코딩",
+                videoCount: 56
+            }
+        }
+
+        var cashDiary = {
+            date: 0610,
+            price: 4100,
+            brand: "starbucks",
+            when: "morning",
+            info: {
+                branch: "동성로점",
+                isGood: true,
+                taste: true
+            }
+        }
+
+        console.log(myYouChannel."open year"); /* 접근불가 */
+        console.log(myYouChannel.["open year"]); /* 접급가능 */
+
+        console.log(myYouChannel.info.category); /* 동일 */
+        console.log(myYouChannel["info"]["category"]); /* 동일 */
+        console.log(myYouChannel.info["category"]); /* 동일 */
+        // 보통 . 으로 접근하고 특수사항에 [대괄호] 사용
+
+        console.log(cashDiary);
+        console.log(cashDiary["brand"]); /* 동일 */
+        console.log(cashDiary.brand); /* 동일 */
+        console.log(cashDiary.xxx);
+        console.log(cashDiary.when);
+        
+        var str = cashDiary.brand;
+        document.write(str);
+        
+    </script>
+
+</body>
+</html>

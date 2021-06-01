@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>for statement</title>
+</head>
+<body>
+
+    <script>
+
+        // var num = 1;
+        // // 증가 연산자
+        // console.log(num);
+        // console.log(num++); /* 1을 더하고 반환 */
+        // console.log(">>>> after : " + num);
+        
+        // // 감소 연산자
+        // var num2 = 2;
+        // console.log(num2);
+        // console.log(num2--); /* 1을 빼고 반환 */
+        // console.log(">>>> after : " + num2);
+
+
+        // // for문, for 반복문
+        // for(/* 조건문 */ var i=0;/* 초기화 */ i < 100;/* 조건부분,(true)검증 */ i++/* 추가동작 */){
+        //     /* 실행문 */
+        //     console.log(`${i}토마토는 맛있다`);
+        // }
+
+        // 반복: 1) 횟수 => 몇번반복할래?
+                // 2) 무엇을? => 실행문
+        // for(var i = 0; i < 5; i++){
+        //     console.log(`번째 푸쉬업`)
+        // }
+
+        // 1~100까지 출력하기
+        // console.log(1);
+        // ~
+        // console.log(100);
+        // 반복되고 규칙있다 - for활용
+        // for(var idx/* index */ = 1; idx<=100; dix++;){
+        //     console.log(idx);
+        // }
+        // for(var idx = 1; idx <= 100; idx++){
+        //     console.log(idx);
+        // }
+
+        for(var idx = 10; idx <=56; idx++){
+            console.log(idx);
+        }
+        // for(var idx = 0; idx <=/* 이하,이상 꺽새 항상먼저,가독성=띄어쓰끼해줌 */ 100;)
+        for(var idx = 0; idx <= 100; idx++){
+            if(idx % 2 !== 0){
+                console.log(idx)
+            }
+        }
+    </script>
+
+</body>
+</html>
