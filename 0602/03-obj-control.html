@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>obj</title>
+</head>
+<body>
+
+    <script>
+    // var alpaca = {
+    //     name: '박한성',
+    //     getMarried: false,
+    //     money: null,
+    //     habit: 'tennis',
+    //     // console창에서 객체가 최상위에 보임
+    //     favorite: {
+    //         movie : 'between calm and passion',
+    //         person : 'elon musk',
+    //         food : '보쌈'
+    //     },
+    //     "special ability" : "cook"
+    // };
+
+    // console.log(alpaca);
+    // console.log(alpaca.name);
+    // console.log(alpaca.habit);
+
+    // // 객체의 value값 수정
+    // alpaca.habit = "soccer";
+    // // var habit = "soccer"; 의 설정과 같음
+    // console.log(alpaca.habit);
+
+    // // 객체에 value 추가하기
+    // alpack.friend = "koala";
+    // alpack.iveMoney = 5000;
+
+    // console.log(alpaca);
+
+    // // 객체에 value 삭제하기
+    // // delete 예약어 선언
+    // delete alpaca.friend;
+
+    // /* 
+    //     C: Create(생성)
+    //     R: Read(읽고)
+    //     U: Update(수정)
+    //     D: Delete(삭제)
+    // */
+
+    // // key in object
+    // console.log('friend' in alpaca);
+
+    // if('friend' in alpaca){
+    //     console.log('>>>> 오래 친하게 지내')
+    // }else{
+    //     alpaca.friend = "koala";
+    // }
+
+    // console.log(alpaca);
+
+    
+    var goToAcademy = {
+        // 객체안에 함수는 메서드라고 부른다
+        cash : 1200,
+        // 파라미터
+        byBus: function(name){
+            // console.log('>>> 버스타기');
+            console.log(`${name} 그럼 안녕!`);
+        },
+        bySubway: function(){
+            console.log('>>> 지하철 타기');
+        },
+        걷기: function(){
+            console.log('>>>>> 걷기');
+        }
+    }
+    console.log(goToAcademy);
+    console.log(goToAcademy.buBus);
+    // 인자
+    // 객체안의 함수 메서드
+    console.log(goToAcademy.byBus("현욱"));
+
+    // 객체 object
+    var consoleTest = {
+        // 메서드 - 객체안에 함수
+        log: function(msg){
+            console.log(msg);
+        }
+    }
+    // 객체사용,객체안에메서드 사용 
+    // ex) console.log 의 객체 및 사용법 - 알아봄
+    consoleTest.log("KT를 사자");
+
+    // var obj = {
+    //     var func = fuction()
+    // }
+    
+    // 함수 기본모양
+    function test(){
+
+    }
+    // 이름이 없다면?
+    // () 붙여 하나의 덩어리로 인식 
+    (function (){
+        console.log(">> 즉시 실행 함수")
+    })();
+    
+    function test(){}();
+    (function (){})();
+    test()
+    // 사용이유? 즉시실행, 가장먼저? 실행되기 하기 위함
+    </script>
+
+</body>
+</html>

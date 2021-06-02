@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>test</title>
+</head>
+<body>
+
+
+    <script>
+        let charlie = {
+            '된장찌개 만들기': 10,
+            '김치찌개 만들기': 8,
+            '피자 만들기': 22,
+            '까르보나라 만들기': 18,
+            '계란 삶기': 20,
+        };  
+
+        let james = {
+            '된장찌개 만들기': 14,
+            '김치찌개 만들기': 8,
+            '피자 만들기': 12,
+            '까르보나라 만들기': 4,
+            '계란 삶기': 16,
+        };
+
+        
+       
+
+        passChecker(charlie);
+        passChecker(james);
+
+        function passChecker(scoreObject) {
+            // console.log(scoreObject);
+            var totalScore = 0;
+
+            // 최종합산점수
+            // console.log(scoreObject['된장 찌개 만들기'])
+            // console.log(scoreObject['김치 찌개 만들기'])
+            for(var key in scoreObject){
+                // console.log(scoreObject[key]);
+                // totalScore = totalScore + scoreObject[key];
+                totalScore += scoreObject[key];
+            }
+            console.log(totalScore);
+            
+            // 합격 or 불합격
+            if(scoreObject >= 60){
+                console.log("합격입니다")
+            }else{
+                console.log("불합격입니다")
+            }
+        }
+    </script>
+</body>
+</html>

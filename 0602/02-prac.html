@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>review prac</title>
+</head>
+<body>
+
+    <script>
+        // for(var i = 100; i >= 1; i--){
+        //     // console.log(i);
+        //     // if(i % 2 == 0){
+        //     //     console.log(i)
+        //     // }
+        // }
+        
+        for(var num = 100; num > 0; num--){
+            // if(num % 2 == 0){ /* 짝수 */
+            // if(num % 2 !== 0){ /* 홀수 */
+            if(num % 2 == 0){
+                console.log(num);
+            }
+        }
+
+        // for(var i = 1; i <= 1; i++){
+        //     // console.log(i);
+        //     // for(var z = 1; i <= 9; i++){
+        //         for(var j = 2; j <=18; j++){
+        //             if(j % 2 == 0){
+        //                 // console.log(j);
+        //                 console.log(`2 곱하기 ${i} = ${j}`);
+        //             }
+        //         }
+        //         for(var z = 3; z <=27; z++){
+        //             if(z % 3 == 0){
+        //                 console.log(z);
+        //             }
+        //         }
+        //     // }
+        // }
+
+        // for(var dan = 2; dan < 10; dam++){
+        //     for(var num = 1; num <= 9; num++){
+        //         // console.log(dan + "단" + num);
+        //         // console.log(dan);
+        //         console.log(dan + "X" + num + "=" + dan);
+        //     }
+        //     // console.log(dan + "단")
+        // }
+
+        // switch("C"){
+        //     case "B":
+        //     console.log("B를 선택하셨습니다");
+        //     case "C":
+        //     console.log("C를 선택하셨습니다");
+        // }
+
+        // window
+        // 객체는 많은 데이터를 한번에 표현하기 위함
+        // css스타일정의 작업과 같이 이것도 하나의 객체를 정의하는 작업과정..!
+        var person = {
+            사는곳: "지구",
+            형태 : "동그라미",
+            색깔 : "하늘색",
+            인구: "인구 몇명",
+            특징: {
+                1: "비옥한 토양",
+                2: "풍부한 공기",
+                3: "과학의 발달"
+            },
+            진행상황: "발전중",
+            좌표 : "(123, 1111, 123, 1234)",
+            행동 : function 걷기(){
+                console.log(">>>> 5km")
+            },
+            행동2 : function 밥먹기(){
+                console.log(">>>> 하루에 3끼")
+            }
+        }
+
+        console.log(person);
+
+        console.log(person.인구);
+        console.log(person.걷기());
+        console.log(person.["인구 몇명"];
+    </script>
+
+</body>
+</html>

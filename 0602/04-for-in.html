@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>for in loop statement</title>
+</head>
+<body>
+
+    <script>
+        // var parkhanseong = {
+        //     name: '박한성',
+        //     getMarried: false,
+        //     money: 0,
+        //     habit: 'tennis',
+        //     "special ability" : "cook"
+        // };
+        // // for(var i = 0; i < 10; i++){
+        // //     // console.log(parkhanseong.name);
+        // //     console.log(parkhanseong["name"]);
+        // //     console.log(parkhanseong["getMarried"]);
+        // //     console.log(parkhanseong["money"]);
+        // // }
+
+        // for(var key/* str,idx 상관없이 명시적, 보통key */ in parkhanseong){
+        //     // key 를 나오게 함
+        //     console.log(key);
+        //     console.log(parkhanseong[key]);
+        // }
+
+        var paymentHistory = {
+            one: 1,
+            two: 2,
+            three: 3,
+            four: 4,
+            five: 5,
+            six: 6,
+            // ....five100000만개
+        }
+        var total = 0;
+        for( var key in paymentHistory){
+            // console.log(key);
+            // total = total + paymentHistory[key]
+            total += paymentHistory[key];
+            // console.log(paymentHistory[key]);
+        }
+        console.log(total);
+
+    </script>
+
+</body>
+</html>
