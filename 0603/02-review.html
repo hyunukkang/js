@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>for</title>
+</head>
+<body>
+
+    <script>
+        // for(var i = 1; i <= 5; i++){
+        //     console.log(i);
+        // }
+        // for(var i = 1; i <= 5; i++){
+        //     console.log(i+1);
+        // }
+        // // for(var i = 2; i <= 6; i++){
+        // //     console.log(i);
+        // // }
+        // for(var i = 7; i >= 3; i--){
+        //     console.log(i);
+        // }
+        // for(var i = 7; i >= 3; i--){
+        //     console.log(i+1);
+        // }
+        // // for(var i = 8; i >= 4; i--){
+        // //     console.log(i);
+        // // }
+
+        // // 변수 최초 선언시 대입해준 
+        // // value에 의해 type이 정해진다
+        // var str = "";
+        // for(var i = 1; i <= 5; i++){
+        //     str = str + 1;
+        // }
+        // console.log(str);
+
+
+        // // length - 배열의 갯수를 알려줌 
+        // let koreanLang = ["가", "나", "다", "라", "마"];
+        // console.log(koreanLang.length);
+        // // for(var i = 0; i < 7; i++){
+        //     // 배열의 length 사용
+        // for(var i = 0; i < koreanLang.length; i++){
+        //     console.log(koreanLang[i]);
+        //     document.write(koreanLang[i]);
+        // }
+        
+        var classMember = [
+            "강현욱",
+            "박소영",
+            "정가은",
+            "조수경",
+            "정다겸",
+        ]
+
+        var classMemberClone = [];
+
+        // for
+        for(var i = 0; i < classMember.length; i++){
+            // console.log(classMember[i]);
+            // if(classMember[i] !== "강현욱"){
+                classMemberClone[i] = classMember[i];
+            // }
+        }
+        console.log(classMemberClone);  
+        </script>
+
+</body>
+</html>

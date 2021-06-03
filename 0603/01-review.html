@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>review</title>
+</head>
+<body>
+
+
+    <script>
+        // var window = {
+        //     width: 500,
+        //     height: 500,
+        //     frame: "square",
+        //     made: "made in korea",
+        //     material: "stained glass",
+        //     openType: function(type){
+        //         if(type === 'horizontal'){
+        //             console.log('>>>오른쪽으로 열기')
+        //         }else if(type === "vertical"){
+        //             console.log(">>>>> 왼쪽으로 열기")
+        //         }
+        //     }
+        // }
+
+        // array(배열) > arr
+        var travelArr = ["홍콩", "영국", "미국", "헝가리", "독일"];
+        // console.log(travelArr);
+        // console.log(travelArr[1]);
+        // console.log(travelArr[4]);
+        // console.log(travelArr[5]);
+
+        // array data create/add
+        // travelArr[5] = "일본";
+        // travelArr[8] = "핀란드";
+        // array 삭제
+        // travelArr.splice(6, 2); /* 6번 부터 2개까지 삭제 */
+        // console.log(travelArr);
+
+        // for in(객체반복에 쓰임) => (object)
+
+        // forEach(배열반복에 쓰임) => array
+        // type이 function이고 매개변수로 item
+        // 매개변수로 (item, index, array)를 받는다
+        travelArr.forEach(function (item, index, arr){
+            console.log(item);
+            console.log(index);
+            console.log(arr);
+        })
+        console.log(travelArr);
+
+        for(var i = 1; i <=5; i++){
+            console.log(i);
+        }
+        
+        </script>
+
+</body>
+</html>
