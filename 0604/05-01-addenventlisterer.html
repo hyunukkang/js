@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>addEventListener</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .box {
+        display: inline-block;
+        border: 1px solid #000;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+</head>
+<body>
+
+
+    <!-- <button onclick=" afunction(); bfunction(); cfunction();">
+        click
+    </button> -->
+    <button>
+        click
+    </button>
+    <div class="box">
+        box
+    </div>
+
+    <script>
+        // 1번째 방식 : inline 선언방식
+        // 단점: 코드가 복잡해진다 (html, css 다 썩인다)
+
+        var btn = document.querySelector('button');
+            console.dir(btn);
+            // // 2번째 이벤트 선언방식
+            // // 단점: 하나의 이벤트 밖에 발생시키지 못한다
+            // btn.onclick = function (){
+            //     console.log('>>>> property event >>')
+            // }
+            // btn.onclick = function (){
+            //     console.log('>>>> property event 2 >>')
+            // }  /* 하나밖에 입력안됨 onclik으로 들어가기 때문 */
+            
+        // var element = {
+        //     addEventListener: function(type, func){
+        //         // login invoke
+        //         if(type === 'click'){
+        //             // 실행문
+        //         }
+        //     }
+        // }
+
+
+        // 3번째 이벤트 선언방식
+        btn.addEventListener('click', function (){
+            // 실행문
+            console.log(">>>>>onClick >> invoke1");
+        });
+        btn.addEventListener('click', function (){
+            console.log(">>>>>onClick >> invoke 2");
+        });
+        /* 두개 모두 사용 가능*/
+    </script>
+</body>
+</html>

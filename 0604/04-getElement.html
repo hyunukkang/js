@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>getElement</title>
+</head>
+<body>
+
+<h1 class="logo" id="logo">title</h1>
+<h1 class="logo">title2</h1>
+<h1 class="logo">title3</h1>
+<h1 class="logo">title4</h1>
+
+<script>
+    // getElemnetsByTagName은 배열을 반환
+    // 단 한개라도..!
+    // HTMLCollection = 유사 배열(array) - getElements / getElement - 단일 
+    var h1 = document.getElementsByTagName('h1');
+    var logo = document.getElementsByClassName('logo'); /* elements - class 여러개 */
+    var logoById = document.getElementById('logo');/* element - id는 단일 */
+    // * id가 가장 빠르다 - 성능좋다
+    console.log(logo);
+    console.log(logoById);
+    console.log(log[2]); /* title 3을 가지고옴 */
+    logo[2].style.color = "blue";
+    logo[2].style.fontSize = "3rem";
+    logo[2].style.backgroundColor = "coral";
+    // 한번에 입력
+    logo[2].setAttribute("style", "color: blue; font-size: 3rem;");
+    
+    // querySelector는 단일 객체를 반환
+    var h1q = document.querySelector('h1');
+
+    // console.log(h1);
+    // console.log(h1q);
+
+    console.log(h1[0]);
+    console.log(h1[1]);
+
+    // querySelector 단수 보다 getElementById 가 빠르고 성능이 더 좋다 
+    // querySelectorAll(HTMLCollection 항목은) 복수 에 사용 - name,id 속성으로도 접근가능 - getElements 는 인덱스번호만 접근 가능
+</script>
+
+</body>
+</html>

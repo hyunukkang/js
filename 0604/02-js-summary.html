@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>js summary</title>
+</head>
+<body>
+
+
+    <script>
+        // // <js> 복습
+
+        // // 엄격모드(js 문법을 - 미리 오류코드를 뱉게하기)
+        // 'use strict'
+
+        // // var let  const
+        // var first = 1;
+        // // let은 재선언(declare)이 안된다
+        // let second = "가";
+        // // 재할당이 안된다
+        // const third = 3;
+
+        // // es5
+        // function test(){
+
+        // }
+        // // es6
+        // var test = () => {
+
+        // }
+
+        // // 5가지 자료형
+        // // 숫자형 문자형 불대수(boolean) null undefined
+
+        // // 평소와 다르게 쓰면 혼동을 줄 수 있으니 알 수 있도록
+        // function test(){ console.log('>>>test console')}
+        // // 위에 방식으로 쓰기도 한다  - 회사에 정해진 규칙에 따라 다를수 있음
+        // function test(){ 
+        //     console.log('>>>test console')
+        // }
+
+        // // 함수호출, 파라미터
+        // // 함수호출가 전역변수 보다 우선
+
+        // // ==동등 , ===일치  !== 부등 !=== 불일치
+
+        // // return 반환
+        // // function 내부에만 쓰이는 예약어
+
+        // // !!읽어지는 순서는 위에서 아래
+        // // 함수호이스팅  - 함수는 어디든 호출 가능
+        // testFunc();
+        // function testFunc(){
+
+        // };
+        
+
+        // // 전역변수global(어디든) , 로컬변수local(함수내부에서만 정의됨)
+
+
+        // // 삼항연산자
+        // var age = 20
+        // var age = 15
+        // var status = (age >= 18) ? "adult"/* true */ : "minor"/* false */;
+        //     console.log(status);
+
+        // // 삼항연사자, if구문의 결과값이 동일
+
+        // // if 구문
+        // var status2 = "";
+        // if(age >= 18){
+        //     status2 = "성인"
+        // }else{
+        //     status2 = "미성년자"
+        // }
+        // // if(age >= 18){status2 = "성인";}
+        // // else{status2 = "미성년자";}
+        //     console.log(status2);
+        
+
+        // 객체중요!!  형태 - key: value /* 데이터를 얻어내기 위한 key - key의 값 value */
+        // 띄어쓰기에는 "" 로 표기 . , [ ] , ["띄어쓰기된데이터"]
+
+        // method - 객체내부에 선언된 함수 메소드도 함수다, 
+        // 객체에 종속적 var varName. - 객체.을 쓰고 들어감, 함수사용은 독립적 
+
+        // js는 기본에대해서 많이 물어봄 - 면접 질문
+
+        // 변수 var test = 0 
+        // data type = number, string, boolean, null, undefined
+        // 함수 function
+        // 반복문 for (var i = 0; i <10; i++)
+        // 조건문 else if else
+        // data type = object {}, array[]
+
+
+
+        // **DOM document object model**
+        // var window = {
+        //     html: {
+        //         css: 'box'
+        //     }
+        // }
+        // 객체 점 접근법  - 대입연산자
+        // window.html.css = "box2"
+        
+        // window객체 > document
+
+        var document1 = {
+            body: {
+                div: {
+                    h1: "타이틀",
+                    ul: {
+                        value: "타이틀",
+                        element: {
+                            li: "menu1"
+                        }
+                    }
+                }
+            }
+        }
+
+        console.log(document1.body.div.h1);
+
+        // 객체모델확인 - console.dir(document...등);
+        // 이벤트시점
+    </script>
+</body>
+</html>

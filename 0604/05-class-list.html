@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>class list</title>
+<style>
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrap {
+        border: 1px solid #000;
+        text-align: center;
+    }
+    .box {
+        margin-top: 1rem;
+        width: 200px;
+        height: 200px;
+    }
+    .gold {
+        background: gold;
+    }
+    .coral {
+        background: coral;
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <button onclick="handleRemoveColor();">
+            change color
+        </button>
+        <button onclick="handleAddColor();">
+            change color
+        </button>
+        <button onclick="handleToggleColor();">
+            toggle color
+        </button>
+        <div class="box">
+        </div>
+    </div>
+    <!-- 
+        클릭하면 coral 색상으로 변해
+        1. event 선언
+        2. 함수 선언
+        3. box ele를 가져온다
+        4. 클릭했을때 엘리먼트의 객체의 style color 를 변경한다
+     -->
+    <script>
+        // function handleRemoveColor(){
+        //     var box = document.querySelector('.box');
+        //     // console.log(box);
+        //     // console.dir(box);
+        //     box.classList.remove('gold');
+        // }
+        // function handleAddColor(){
+        //     var box = document.querySelector('.box');
+        //     // console.log(box);
+        //     // console.dir(box);
+        //     box.classList.add('coral');
+        // }
+        function handleToggleColor(){
+            var box = document.querySelector('.box');
+            box.classList.toggle('coral');
+        }
+    </script>
+</body>
+</html>

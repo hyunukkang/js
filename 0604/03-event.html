@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>event</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    button {
+        border: none;
+        padding: 1rem;
+        background: coral;
+        cursor: pointer;
+    }
+    /* 
+    셀렉팅: 선택한다
+    프로퍼티 선언하고 설정해준다 color: blue 
+    */
+</style>
+</head>
+<body>
+
+    <!-- inline 방식 -->
+    <!-- <button style="color: red; font-size: 2rem;" 
+        onclick="console.log(`여기가 js-inline작성`
+        if(var i = 0 ; i >= 10; i++){});
+        clickFunc();
+        " 
+        > -->
+        <!-- <button style="color: red; font-size: 2rem;" onmouseover=""> -->
+            <!-- click -->
+            <!-- </button> -->
+            
+    <!-- <button style="color: red; font-size: 2rem;"
+            onclick="handleColor();"
+    >
+        click
+    </button> -->
+    <button class="btn-class" id="btn-id">
+        click
+    </button>
+    <button class="btn-class">
+        click
+    </button>
+    <button class="btn-class">
+        click
+    </button>
+    <h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ad, pariatur iure placeat temporibus deserunt explicabo, sed vel laborum maxime veniam quia ratione, nesciunt cumque aspernatur neque nisi dolore nihil?
+    </h1>
+    <!-- 
+        var button = { 
+            onclick: {}
+            mouseover: {}
+        }
+    -->
+    
+    <script>
+        // function clickFunc(){
+        //     alert
+        // }
+        // var document = {
+        //     querySelector: function(){}
+        // }
+
+        // 매개변수에 태그네임을 전달
+        var btn = document.querySelector('button');
+        var btnClass = document.querySelector('.btn-class');
+        var btnClass = document.querySelectorAll('.btn-class');
+        console.dir(btnClass[0]);
+        console.dir(btnClass[1]);
+        console.dir(btnClass[2]);
+        btnClass[2].style.color = "red";
+        var btnId = document.querySelector('#btn-id');
+        console.log(btnClass);
+        console.log(btnId);
+
+        // console.log(btn);
+        // console.dir(btn);
+        // btn.style.color = "blue";
+        // btn.style.width = "500px";
+
+        // function handleColor(){
+        //     // console.log('handle')
+        //     var h1 = document.querySelector('h1');
+        //     console.log(h1);
+        //     console.dir(h1);
+        //     h1.style.color = "blue";
+        //     h1.style.background = "coral";
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>review</title>
+</head>
+<body>
+
+
+    <script>
+        // arr.length를 이용한 array for문
+        let classMember = ["물", 1, "바람", 4, null];
+
+        console.log(classMember.length);
+        // index의 끝번호 = length -1;
+
+        // for(var i = 0; i < 5; i++){
+        //     console.log(classMember[i]);
+        // }
+        for(var i = 0; i < classMember.length - 1; i++){
+            console.log(classMember[i]);
+        }
+
+        // forEach는 length를 알 필요가 없다
+        classMember.forEach(function(item, idx, arr){
+            if(idx === 2){
+                console.log(item);
+            }
+            if(arr[idx] === "바람"){
+                console.log(item);
+            }
+        });
+
+        // 매개변수는 순서가 중요하다
+        // 이름바꿔도 가능하지만 알수있게
+        // classMember.forEach(function(a, b, b){
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+        // });
+    </script>
+</body>
+</html>
