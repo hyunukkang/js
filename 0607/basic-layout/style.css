@@ -45,6 +45,7 @@ li {
     height: 40px;
     position: relative;
     cursor: pointer;
+    z-index: 1;
 }
 .toggle span {
     position: absolute;
@@ -69,16 +70,17 @@ li {
     bottom: 0;
     left: 0;
 }
-.toogle.active span:nth-child(1),
-.toogle.active span:nth-child(4)
+.toggle.active span:nth-child(1),
+.toggle.active span:nth-child(4)
 {
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
-.toogle.active span:nth-child(2){
-    transform: translate(45deg);
+.toggle.active span:nth-child(2){
+    transform: rotate(45deg);
 }
-.toogle.active span:nth-child(3){
-    transform: translate(-45deg);
+.toggle.active span:nth-child(3){
+    transform: rotate(-45deg);
 }
 /* ======== navbar*/
 .navbar {
@@ -89,14 +91,13 @@ li {
     height: 100vh;
     background: #6A7BA2;
     color: #FFDFDE;
-    padding-top: 72px;
-    z-index: -1;
-    transform: translate(100%);
+    padding-top: 80px;
+    transform: translateX(100%);
     transition: 300ms;
     /* transform: translate(-100%); */
 }
 .navbar.active {
-    transform: translate(0);
+    transform: translateX(0);
 }
 .navbar__menu {
     display: block;

@@ -8,7 +8,7 @@
 // }
 
 var toggle = document.getElementById('toggle');
-var navbar = document.querySelector('navbar')
+var navbar = document.querySelector('.navbar')
 console.log(toggle);
 console.log(navbar);
 
