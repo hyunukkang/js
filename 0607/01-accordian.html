@@ -21,15 +21,14 @@
     }
     #skill {
         border: 1px solid #000;
+        margin-top: 10rem;
     }
     .accordian {
         width: 500px;
         margin: 0 auto;
         color: #0A174E;
         background: #F5D042;
-    }
-    .accordian__item {
-
+        position: relative;
     }
     .accordian__title {
         display: flex;
@@ -41,7 +40,6 @@
     .accordian__desc {
         color: #F5D042;
         background: #0A174E;
-        /* padding: 1rem; */
         height: 0;
         overflow: hidden;
         transition: 500ms;
@@ -53,22 +51,28 @@
         overflow: hidden;
         transition: 500ms;
     }
-    /* .open + .accordian__desc {
-        padding: 1rem;
-        height: 260px;
-        overflow: initial;
-    }
-    .rotate i {
-        transform: rotate(180deg);
-        transition: 500ms;
-    } */
-    
     .accordian__title i {
         transition: 400ms;
     }
     .accordian__title.open i {
         transform: rotate(180deg);
         transition: 400ms;
+    }
+    #closeAll {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        padding: 1rem;
+        color: #F5D042;
+        background: #0A174E;
+        border: none;
+        border-radius: .5rem .5rem 0 0;
+        /* 
+        :root { --mb-1: 1rem; --mb-1-5: rem;}
+        rem(browser 기본 폰트,반응형에 일종,rem을 쓰면 다 잘 잡으면서 들어가야함)
+        em(font) 
+        */
+        cursor: pointer;
     }
 </style>
 </head>
@@ -82,6 +86,9 @@
     -->
     <section id="skill">
         <ul class="accordian">
+            <button id="closeAll">
+                close all
+            </button>
             <li class="accordian__item">
                 <div class="accordian__title">
                     <a href="#">About</a>
@@ -145,6 +152,9 @@
         // 반복이면 줄여야함 - 반복문활용 
         for(var i = 0; i < title.length; i++){
             title[i].addEventListener('click', function(){
+                // 다른것은 닫히게 한다
+                functionCloseAll();
+
                 // title[i].classList.toggle('open'); /* 클릭했을때는 배열이 없다 - 적용안됨 */
                 this.classList.toggle('open');
                 // click이 되었을때 this(자기자신에) classList에 toggle 해라
@@ -155,6 +165,19 @@
             });
         }
         
+        // 전체닫기
+        var closeAll = document.getElementById("closeAll");
+        closeAll.addEventListener('click', function(){
+            functionCloseAll();
+        })
+            function functionCloseAll(){
+            for(var i = 0; i < title.length; i++){
+                    title[i].classList.remove('open')    
+                };
+            }
+            // title[0].classList.reomoveClass('open')
+            // title[1].classList.reomoveClass('open')
+            // title[2].classList.reomoveClass('open')
     </script>
 </body>
 </html>
